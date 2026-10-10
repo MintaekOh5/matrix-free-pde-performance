@@ -16,7 +16,7 @@ I started with a simple 2D heat equation and then looked at two performance ques
 
 ## Main Results
 - On a 2048 x 2048 grid, changing the loop ordering produced about an ~8x runtime difference in one benchmark.
-- On a 1024 x 1024 grid, the matrix-free Laplacian was about ~4x faster than the CSR implementation in the recorded benchmark.
+- On a 1024 x 1024 grid, the matrix-free Laplacian was about ~3.5x faster than the CSR implementation in the recorded benchmark.
 - At 2.36 million degrees of freedom, the matrix-free approach used about 5x less estimated working memory because the sparse matrix did not need to be stored explicitly.
 
 The exact numbers depend on the computer and implementation, so the main goal of this project is to understand why these performance differences can occur.
